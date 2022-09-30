@@ -1,7 +1,7 @@
 create table orders (
-id serial primary key,
+id bigint not null auto_increment primary key,
 date date,
-customer_id int,
+customer_id bigint,
 product_name varchar(50),
 amount double precision,
 foreign key (customer_id) references customers (id)
